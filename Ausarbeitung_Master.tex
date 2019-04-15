@@ -1,0 +1,230 @@
+%%% Dokumentenklasse
+\documentclass[10pt,a4paper,draft=false]{scrreprt}
+\KOMAoption{toc}{listof,bib}
+
+%%% Kopf & Fußzeile
+\usepackage[
+automark,			%automatische Aktualisierung des Kolumnentitels in der Kopfzeile
+headsepline,		%Strich UNTER der Kopfzeile
+footsepline			%Strich ÜBER der Fußzeile
+]{scrpage2}
+
+%%% Sprach Pakete
+\usepackage[ngerman]{babel}
+%\usepackage[ansinew]{inputenc} % Falls es Probleme mit ä,ö,ü ... gibt, sollte das Packet in dieser Zeile wieder aktiviert werden 
+\usepackage[utf8]{inputenc} % wenn der Kommentar aus der oberen Zeile entfehrnt wird, muss diese Zeile kommentiert werden
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage[T1]{fontenc}
+
+%%% Style Packete
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{longtable} 	
+\usepackage{tabularx}
+\usepackage{ltablex} % kombiniert longtable und tabularx; benötigt den befehl \keepXColumns direkt vor \begin{tabularx} damit der X-Character der spalten erhalten bleibt
+\usepackage{multirow,array,booktabs} 
+\usepackage[bf, flushleft,justification=justified]{caption}[2018/05/01] 
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage{upgreek} % Nicht kursive Griechische Buchstaben einbinden
+\usepackage{textgreek} % For greek letters in the text
+
+% Hyperref: Klickbare Verweise in PDF-Dokumenten bei Verwendung von pdftex.
+%           Einstellbare Optionen für die PDF-Dokumenteigenschaften:
+%           - pdftitle:  Titel des Dokuments
+%           - pdfauthor: Autor der Arbeit
+%           ACHTUNG: Leerzeichen sind in den Optionen nicht zulässig. Am
+%           besten geschützte Leerzeichen (~) benutzen.
+\usepackage[colorlinks=true,citecolor=red]{hyperref}
+
+%%% Mathematik Packete
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage[amssymb]{SIunits} % Einbinden von SI - Einheiten
+
+%Chemie Packete
+\usepackage{chemmacros}
+\usepackage{chemformula}
+\usepackage{chemfig}
+
+%%% Abkürzungen
+\usepackage[printonlyused,withpage]{acronym}
+
+%%% Spaltentypen in Tabellen (mit dem Packet "tabularx")
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % linksbündig mit Breitenangabe
+\newcolumntype{C}{>{\centering\arraybackslash}X} % zentriert mit Breitenangabe
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % rechtsbündig mit Breitenangabe
+
+%%% Bibliografie
+\usepackage[
+backend=biber,
+sorting=none,
+style=numeric-comp,    		   % Zitierstil
+isbn=false,     % isbn nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
+url=false,		%url wird nicht angezeigt
+doi=false,		%doi wird angezeigt
+eprint=false,	%eprint wird nicht angezeigt
+pagetracker=true,          % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
+ibidtracker=true,
+maxbibnames=50,            % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
+maxcitenames=3,            % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
+autocite=inline,           % regelt Aussehen für \autocite (inline=\parancite)
+block=space,               % kleiner horizontaler Platz zwischen den Feldern
+backref=true,              % Seiten anzeigen, auf denen die Referenz vorkommt
+backrefstyle=three+,       % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
+date=short,                % Datumsformat
+]{biblatex}
+\setlength{\bibitemsep}{1em}     % Abstand zwischen den Literaturangaben
+\setlength{\bibhang}{2em}        % Einzug nach jeweils erster Zeile
+
+%--------------------------------------------------
+
+% %% Bibliographie laden
+\bibliography{Literatur/literatur.bib} 
+
+%%% Kapitel einbinden
+\includeonly{
+%	Kapitel/01-Einleitung/einleitung,
+%	Kapitel/02-Material-und-Methoden/material-und-methoden,
+%	Kapitel/03-Ergebnisse/ergebnisse,
+	Kapitel/04-Diskussion/diskussion,
+	Kapitel/05-Fazit/fazit,
+%	Kapitel/06-Ausblick/ausblick,
+}
+%--------------------------------------------------
+
+\author{Julian Blaser}
+\title{\Huge \textbf{Titel}}
+\date{\today}
+
+%------------Fancy Header------------------
+%\pagestyle{fancy}
+%\renewcommand{\sectionmark}[1]{\markboth{\emph{#1}}{}}
+%\fancyhf{}
+
+%\fancyhead[LE,RO]{\textbf{\thepage}}
+%\fancyhead[LO,RE]{\textbf{\leftmark}}
+%\fancyfoot[LE,RO]{\author{Julian Blaser}}
+%\fancyfoot[LO,RE]{\date{\today}}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0.5pt}
+%----------Ende Fancy Header---------------
+
+
+%%% ------------Kopf&Fußzeile KOMA Skript------------------
+\pagestyle{scrheadings}
+
+\ihead{\raisebox{1.mm}{\headmark}}
+\ohead{\raisebox{1.mm}{\pagemark}}
+\chead{}
+\ofoot{\raisebox{-1.5mm}{Julian Blaser}}
+\ifoot{\raisebox{-1.5mm}{Hochschule München}}
+\cfoot{}
+
+\setheadsepline{.5pt}
+\setfootsepline{.5pt}
+
+%%% ------------Kopf&Fußzeile KOMA Skript------------------
+
+\setlength{\parindent}{0em} % Automatisches Einrücken nach Absatz verhindern
+
+\begin{document}
+	
+	
+% häufig benutzte Redewendungen
+\newcommand{\abb}{Abbildung}
+\newcommand{\abbn}{Abbildungen}
+\newcommand{\spitze}{Abtastspitze}
+\newcommand{\spitzen}{Abtastspitzen}
+\newcommand{\amid}{Amidbindung}
+\newcommand{\amide}{Amidbindungen}
+\newcommand{\amino}{Aminogruppe}
+\newcommand{\aminos}{Aminogruppen}
+\newcommand{\carboxy}{Carboxylgruppe}
+\newcommand{\carboxys}{Carboxylgruppen}
+\newcommand{\spacer}{CMA-Spacer}
+\newcommand{\spacers}{CMA-Spacers}	
+\newcommand{\substrat}{DLC-Substrat}
+\newcommand{\substrats}{DLC-Substrats}
+\newcommand{\gl}{Gleichung}
+\newcommand{\gln}{Gleichungen}
+\newcommand{\ester}{NHS-Ester}
+\newcommand{\estern}{NHS-Estern}
+\newcommand{\samplerate}{Samplerate}
+	
+% häufig verwendete Zahlen
+\newcommand{\hscaleZero}{1}
+\newcommand{\hscaleOne}{0.75}
+\newcommand{\hsclaeChemfig}{0.65}
+\newcommand{\hscaleTwo}{0.5}
+
+% text für fußnoten etc.
+\newcommand{\noteOne}{text}
+\newcommand{\noteTwo}{text}
+\newcommand{\noteThree}{text}
+\newcommand{\noteFour}{text}
+	
+	\pagenumbering{Roman}%----------------------------------------
+
+%	Titelseite
+	\input{Titelseite/title_page_1}
+	
+	\tableofcontents	\newpage
+	
+%	Abkürzungsverzeichnis
+%	\input{Pfad}
+
+%	Chemische Makros
+	\input{Chemische-Makros/makros}
+
+	\pagenumbering{arabic}%-----------------------------------------
+	
+	%----------------------------Auflistung der Kapitel----------------
+	\include{Kapitel/01-Einleitung/einleitung}
+	\include{Kapitel/02-Material-und-Methoden/material-und-methoden}
+	\include{Kapitel/03-Ergebnisse/ergebnisse}
+	\include{Kapitel/04-Diskussion/diskussion}
+	\include{Kapitel/05-Fazit/fazit}
+	\include{Kapitel/06-Ausblick/ausblick}
+	%---------------------------Ende der Kapitelliste------------------
+	
+	
+	%--------------------print Bibliography at the end--------------
+	\renewcommand{\leftmark}{Referenzen} % Setzt entsprechende section wieder in die Kopfzeile (linke Seite)
+	\renewcommand{\refname}{Referenzen} % Setzt entsprechende section wieder in die Kopfzeile (rechteSeite)
+	\renewcommand{\section}[2]{}
+	\printbibliography
+	
+	%----------------------------------Abkürzungen----------------------
+	\chapter*{Abkürzungsverzeichnis}
+	\begin{acronym}[längste Abkürzungen]
+		\acro{AFM}{Atomic Force Microscope}
+		\acro{CMA}{\iupac{Carboxy|methyl|amylose}}
+		\acro{DLC}{Diamond Like Carbon}
+		\acro{DP}[\textit{DP}]{Doppelpeak}
+		\acro{EDC}{\iupac{1-Ethyl-3-(3-di|methyl|amino|propyl) Carbo|diimid Hydro|chlorid}}
+		\acro{HCl}[\ch{HCl}]{Salzsäure}
+		\acro{HDC}{High Densitiy Carbon}
+		\acro{NaOH}[\ch{NaOH}]{Natriumhydroxid}
+		\acro{NHS}{\iupac{N-Hydroxy|succinimid}}
+		\acro{PBS}[\ch{PBS}]{Phosphate Buffered Saline}
+		\acro{SMFS}{Single Molecule Force Spectroscopy}
+		\acro{tmax}[t$_\mathrm{max}$]{Maximale Clamptzeit}
+		\acro{TZP}{Tetraedisches Zwischenprodukt}
+		\acro{ZI}{Zwitterion}
+		\acro{UZ}[ÜZ]{Übergangszustand}
+	\end{acronym}
+	
+	%TODO: In Anhang: Überlagerung von normierten Clampereignissen zeigen (für diskussion der Mehrfachanbindung)
+	
+	%TODO: In Anhang: FLC-Fits mehrerer Clampereignisse im unteren Kraftbereich, um zu zeigen, dass mechanische Eigenschaften der Polymere an denen gemessen wurden gleich sind.
+	
+	%%% Einfügen eines Anhangs
+	\appendix
+	
+\end{document}

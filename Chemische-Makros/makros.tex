@@ -1,0 +1,206 @@
+%===========================
+%%% Makros für NHS/EDC-Chemie 
+%===========================
+
+% EDC
+\newcommand{\EDC}{	
+	\chemfig{H_3C-[:30,.75]-[:-30,.75]N=[:30,.75]C=[:30,.75]N-[:-30,.75]-[:30,.75]-[:-30,.75]-[:30,.75]\chembelow{N\rlap{${}^+$}}{H}(-[:90]CH_3)(-[:-30]CH_3)
+		(-[:30,0.6,,,draw=none]Cl\rlap{${}^-$})}
+}
+
+% Isourea
+\newcommand{\OAcylisourea}{
+	\chemfig{
+		[:90,.75]H_3C-[:30]-[:-30]N-[:30](-O-[:30](-\textcolor{red}{\textbf R_1})=[:-30]O)=[:-30]N-[:30]-[:-30]-[:30]-[:-30]\chembelow{N\rlap{${}^+$}}{H}(-[:90]CH_3)(-[:-30]CH_3)
+	}
+}
+
+% Rest für den NHS-Ester
+\definesubmol{REster}{\textcolor{red}{\textbf R_1}-[::30,.75](=[::60,.75]O)-[::-60,.75]O}
+
+% NHS-Ester
+\newcommand{\Ester}{
+	\chemfig{
+		[,.75]!{REster}-[:30,1]N*5(-(=O)---(=O)-)
+	}	
+}
+
+% NHS
+\newcommand{\NHS}{
+	\chemfig{
+		[:30,.75]HO-[,1]N*5(-(=O)---(=O)-)
+	}
+}
+
+% Amidbindung
+\newcommand{\Amidbindung}{
+	\chemfig{
+		[:30,1]\textcolor{red}{\textbf R_1}-(=[:90,.75]O)-[:-30]N(-[:-90,.75]H)-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Primäres Amin
+\newcommand{\PrimAmin}{
+	\chemfig{
+		[,1.25]H_2N-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Rest mit Carbonsäure
+\newcommand{\Rest}{
+	\chemfig{
+		[,.75]\textcolor{red}{\textbf R_1}-[:30](=[:90]O)-[:-30]OH
+	}
+}
+
+%===========================
+%%% Makros für die Amidhydrolyse
+%===========================
+
+% Wasser
+\newcommand{\Wasser}{
+	\setchemfig{angle increment = 30}
+	\chemfig{H-[1,0.75]@{n1}\lewis{13,O}-[-1,0.75]H}
+}
+
+% OH-Ion
+\newcommand{\OHIon}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		H@{oh}\chemabove{\lewis{026,O}}{\hspace{12pt}\rlap{-}}
+	}
+}
+
+% Amidbindung allgemein (Amidbindung)
+\renewcommand{\Amidbindung}{
+	\chemfig{
+		[:30,1]\textcolor{red}{\textbf R_1}-@{n2}(=[:90,.75]O)-[:-30]\chembelow{N}{H}-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Amidbindung mit addiertem Wasser und protoniert im neutralen (AmidbindungII)
+\newcommand{\AmidbindungII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[-3.5,0.75]HO)(-[@{n3}3,0.75]@{n4}\lewis{024,O})-[@{n5}-1]@{n6}\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% protonierte Amidbindung (AmidbindungIII)
+\newcommand{\AmidbindungIII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\lewis{24,O}H)(-[-3,0.2,,,draw = none]@{pa1}\hspace{-5pt}\rlap{+})-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung mit addiertem Wasser im sauren (AmidbindungIV)
+\newcommand{\AmidbindungIV}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\lewis{24,O}H)(-[-3.5,0.75]HO)-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-Wasser-addukt im sauren mit protoniertem Stickstoff (AmidbindungV)
+\newcommand{\AmidbindungV}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[@{av1}3,0.75]\lewis{24,O}-[@{av2},0.75]@{av3}H)(-[-3.5,0.75]HO)-[@{av4}-1]\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-OH-addukt im basischen (AmidbindungVI)
+\newcommand{\AmidbindungVI}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\chemabove{\lewis{024,O}}{\hspace{10pt}\rlap{-}})(-[-3.5,0.75]HO)-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-OH-addukt mit protoniertem Stickstoff im basischen (AmibdingungVII)
+\newcommand{\AmidbindungVII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[@{aoh1}3,0.75]@{aoh2}\chemabove{\lewis{024,O}}{\hspace{10pt}\rlap{-}})(-[-3.5,0.75]HO)-[@{aoh3}-1]@{aoh4}\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Carbonsäure
+\newcommand{\Acid}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](=[3,0.75]O)-[-1]OH
+	}
+}
+
+% primäres Amin
+\renewcommand{\PrimAmin}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		H_2\lewis{2,N}-\textcolor{red}{\textbf R_2}
+	}
+}
+
+% protoniertes Amin
+\newcommand{\PrimAminII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		H_3\chemabove{N}{\hspace{-5pt}\rlap{+}}-\textcolor{red}{\textbf R_2}
+	}
+}
+
+%===========================================
+%%% Makros für den molekularen Aufbau der Experimente
+%===========================================
+
+% Polymerklammern (für Details siehe Dokumentation des Chemfig Paketes)
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+	\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+	\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+	\chemmove{%
+		\node[at=(#4),yshift=(\delimvshift)]{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim width0pt\right.$};
+		\node[at=(#5),yshift=(\delimvshift)]{$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};
+	} % \chemmove
+} % \def\delimleft\makebraces
+
+% Beispiel: Polyethylen
+%
+% \setpolymerdelim[]
+% \chemfig{\vphantom{CH_2}-[@{op,.75}]CH_2-CH_2-[@{cl,0.25}]} 
+% \makebraces[5pt,5pt]{\!n}{op}{cl}
+
+% Diese Befehle sorgen dafür dass funktionelle Gruppen immer am O bzw. C angesetzt werden
+\definesubmol\OH[HO]{OH}
+\definesubmol\OR[RO]{OR}
+
+% CMA moleküle (\CMA - normales CMA und \CMAr - rotieretes CMA)
+\definesubmol\CMA{
+	(-[::70,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::30](-[::-90,0.75]-[::-30,0.75]!\OR)-[::-40,1.75]O-[::80,1.5]
+}
+
+
+\definesubmol\CMAVerbindung{
+	O-[::60]-[::30,0.75](-[::150](-[::-60]...)-[::-140,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::-70,1.75]O-[::80,1.5]
+}
+
+\definesubmol\CMAr{
+	(-[::-30](-[::90,0.75]-[::30,0.75]!\OR-[@{left,0.25}::-30,,,,draw=none])-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-120,0.75]!\OR-[@{right,0.25}::10,,,,draw=none])-[::-40,1.2]
+}
+
+\definesubmol\CMArVerbindung{
+	(-[::-30](-[::90,0.75]!\OR)-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-40,1.2]-[::60]...)-[::-70,0.75]-[::30]O
+}
+
+% Allylamin Reste
+
+%DLC-Substrat zu Allylamin
+\definesubmol\AllylaminOF{
+	C(-[::90,,,,thick]C-[::0,,,,thick]C)(-[::-90,,,,thick]C-[::0,,,,thick]C)-[::-30]-[::60]-[::-60]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60,,,,,red,thick](=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})
+}
+
+% Allylamin zu AFM-Spitze
+\definesubmol\AllylaminSP{
+	(=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})-[::-60,,,,red,thick]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60]-[::-60]-[::60]C(-[::60,,,,thick]C-[::0,,,,thick]C)(-[::-120,,,,thick]C-[::0,,,,thick]C)
+}

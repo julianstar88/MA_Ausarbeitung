@@ -1,0 +1,510 @@
+%%% Dokumentenklasse
+\documentclass[10pt,a4paper,draft=false]{scrreprt}
+\KOMAoption{toc}{listof,bib}
+
+%%% Kopf & Fußzeile
+\usepackage[
+automark,			%automatische Aktualisierung des Kolumnentitels in der Kopfzeile
+headsepline,		%Strich UNTER der Kopfzeile
+footsepline			%Strich ÜBER der Fußzeile
+]{scrpage2}
+
+%%% Sprach Pakete
+\usepackage[ngerman]{babel}
+%\usepackage[ansinew]{inputenc} Falls es Probleme mit ä,ö,ü ... gibt, sollte das Packet in dieser Zeile wieder aktiviert werden 
+\usepackage[utf8]{inputenc} % wenn der Kommentar aus der oberen Zeile entfehrnt wird, muss diese Zeile kommentiert werden
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{helvet}
+
+%%% Style Packete
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{longtable} 	
+\usepackage{tabularx}
+\usepackage{ltablex} % kombiniert longtable und tabularx; benötigt den befehl \keepXColumns direkt vor \begin{tabularx} damit der X-Character der spalten erhalten bleibt
+\usepackage{multirow,array,booktabs} 
+\usepackage[bf, flushleft]{caption}[2002/08/03]
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage{upgreek} % Nicht kursive Griechische Buchstaben einbinden
+\usepackage{textgreek} % For greek letters in the text
+
+% Hyperref: Klickbare Verweise in PDF-Dokumenten bei Verwendung von pdftex.
+%           Einstellbare Optionen für die PDF-Dokumenteigenschaften:
+%           - pdftitle:  Titel des Dokuments
+%           - pdfauthor: Autor der Arbeit
+%           ACHTUNG: Leerzeichen sind in den Optionen nicht zulässig. Am
+%           besten geschützte Leerzeichen (~) benutzen.
+\usepackage[pdftitle={Titel},pdfauthor={Autor},bookmarksopen=true,bookmarksopenlevel=2]{hyperref}
+
+%%% Mathematik Packete
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage[amssymb]{SIunits} % Einbinden von SI - Einheiten
+
+%Chemie Packete
+\usepackage{chemmacros}
+\usepackage{chemformula}
+\usepackage{chemfig}
+
+%%% Abkürzungen
+\usepackage[printonlyused,withpage]{acronym}
+
+%%% Spaltentypen in Tabellen (mit dem Packet "tabularx")
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % linksbündig mit Breitenangabe
+\newcolumntype{C}{>{\centering\arraybackslash}X} % zentriert mit Breitenangabe
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % rechtsbündig mit Breitenangabe
+
+%%% Bibliografie
+\usepackage[
+backend=biber,
+sorting=none,
+style=numeric-comp,    		   % Zitierstil
+isbn=false,     % isbn nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
+url=false,		%url wird nicht angezeigt
+doi=true,		%doi wird angezeigt
+eprint=false,	%eprint wird nicht angezeigt
+pagetracker=true,          % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
+ibidtracker=true,
+maxbibnames=50,            % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
+maxcitenames=3,            % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
+autocite=inline,           % regelt Aussehen für \autocite (inline=\parancite)
+block=space,               % kleiner horizontaler Platz zwischen den Feldern
+backref=true,              % Seiten anzeigen, auf denen die Referenz vorkommt
+backrefstyle=three+,       % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
+date=short,                % Datumsformat
+]{biblatex}
+\setlength{\bibitemsep}{1em}     % Abstand zwischen den Literaturangaben
+\setlength{\bibhang}{2em}        % Einzug nach jeweils erster Zeile
+
+%--------------------------------------------------
+
+% %% Bibliographie laden
+%\bibliography{Pfad} 
+
+%%% Kapitel einbinden
+%\includeonly{
+%Liste der Kapitel
+%}
+%--------------------------------------------------
+
+\author{Julian Blaser}
+\title{\Huge \textbf{Titel}}
+\date{\today}
+
+%------------Fancy Header------------------
+%\pagestyle{fancy}
+%\renewcommand{\sectionmark}[1]{\markboth{\emph{#1}}{}}
+%\fancyhf{}
+
+%\fancyhead[LE,RO]{\textbf{\thepage}}
+%\fancyhead[LO,RE]{\textbf{\leftmark}}
+%\fancyfoot[LE,RO]{\author{Julian Blaser}}
+%\fancyfoot[LO,RE]{\date{\today}}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0.5pt}
+%----------Ende Fancy Header---------------
+
+
+%%% ------------Kopf&Fußzeile KOMA Skript------------------
+\pagestyle{scrheadings}
+
+\ihead{\raisebox{1.mm}{\headmark}}
+\ohead{\raisebox{1.mm}{\pagemark}}
+\chead{}
+\ofoot{\raisebox{-1.5mm}{Julian Blaser}}
+\ifoot{\raisebox{-1.5mm}{Hochschule München}}
+\cfoot{}
+
+\setheadsepline{.5pt}
+\setfootsepline{.5pt}
+
+%%% ------------Kopf&Fußzeile KOMA Skript------------------
+
+\setlength{\parindent}{0em} % Automatisches Einrücken nach Absatz verhindern
+
+\renewcommand{\familydefault}{\sfdefault}
+
+\begin{document}
+
+
+%%% Aimidbindung
+\begin{center}
+	\setchemfig{angle increment=30}
+	\definesubmol{carbonyl}{\textcolor{red}{C}=[3,0.75,,,red]\textcolor{red}{O}}
+	\chemfig{R_1-[-1]\textcolor{red}{C}-[1]C(!{carbonyl})-[-1]NH-[1]R_2}
+	\bigskip
+\end{center}
+
+\vspace{3cm}
+
+%%% Raktivität der Carbonsäurederivate
+\begin{center}
+	\setchemfig{scheme debug = false}
+	\setchemfig{angle increment=30}
+	\definesubmol{rest}{R-[,0.75]C(=[2,0.75]O)-[-2,0.75]}
+	\schemestart
+		\chemname{
+			\chemfig{!{rest}OH}
+		}{Carbonsäure}
+		\arrow(.base east--.base west){0}[,0]<\arrow(.base east--.base west){0}[,0.3]
+		\chemname{
+			\chemfig{!{rest}NH_2}
+		}{-amid}
+		\arrow(.base east--.base west){0}[,0]<\arrow(.base east--.base west){0}[,0.3]
+		\chemname{
+			\chemfig{!{rest}OR}
+		}{-ester}
+		\arrow(.base east--.base west){0}[,0]<\arrow(.base east--.base west){0}[,0.3]
+		\chemname{
+			\chemfig{!{rest}SR}
+		}{-thioester}
+		\arrow(.base east--.base west){0}[,0]<\arrow(.base east--.base west){0}[,0.3]
+		\chemname{
+			\chemfig{R-[,0.75]C(=[2,0.75]O)-[-1,0.75]O-[1,0.75]C(=[4,0.75]O)-[,0.75]R}
+		}{-anhydrid}
+		\arrow(.base east--.base west){0}[,0.3]<\arrow(.base east--.base west){0}[,0.3]
+		\chemname{
+			\chemfig{!{rest}Cl}
+		}{-chlorid}
+	\schemestop
+\end{center}
+
+\vspace{3cm}
+
+%%% Komplette NHS/EDC-Chemie inklusive makros
+
+%% Makros für die Bestandteile der Kopplungschemie
+
+% EDC
+\newcommand{\EDC}{	
+	\chemfig{H_3C-[:30,.75]-[:-30,.75]N=[:30,.75]C=[:30,.75]N-[:-30,.75]-[:30,.75]-[:-30,.75]-[:30,.75]\chembelow{N\rlap{${}^+$}}{H}(-[:90]CH_3)(-[:-30]CH_3)
+		(-[:30,0.6,,,draw=none]Cl\rlap{${}^-$})}
+}
+
+% Isourea
+\newcommand{\OAcylisourea}{
+	\chemfig{
+		[:90,.75]H_3C-[:30]-[:-30]N-[:30](-O-[:30](-\textcolor{red}{\textbf R_1})=[:-30]O)=[:-30]N-[:30]-[:-30]-[:30]-[:-30]\chembelow{N\rlap{${}^+$}}{H}(-[:90]CH_3)(-[:-30]CH_3)
+	}
+}
+
+% Rest für den NHS-Ester
+\definesubmol{REster}{\textcolor{red}{\textbf R_1}-[::30,.75](=[::60,.75]O)-[::-60,.75]O}
+
+% NHS-Ester
+\newcommand{\Ester}{
+	\chemfig{
+		[,.75]!{REster}-[:30,1]N*5(-(=O)---(=O)-)
+	}	
+}
+
+% NHS
+\newcommand{\NHS}{
+	\chemfig{
+		[:30,.75]HO-[,1]N*5(-(=O)---(=O)-)
+	}
+}
+
+% Amidbindung
+\newcommand{\Amidbindung}{
+	\chemfig{
+		[:30,1]\textcolor{red}{\textbf R_1}-(=[:90,.75]O)-[:-30]N(-[:-90,.75]H)-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Primäres Amin
+\newcommand{\PrimAmin}{
+	\chemfig{
+		[,1.25]H_2N-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Rest mit Carbonsäure
+\newcommand{\Rest}{
+	\chemfig{
+		[,.75]\textcolor{red}{\textbf R_1}-[:30](=[:90]O)-[:-30]OH
+	}
+}
+
+
+%% Ablaufschema der Kopplung
+
+\begin{figure}[H]
+	\begin{center}
+		\scalebox{.75}{\begin{minipage}{\textwidth}
+				\schemedebug{false}
+				\schemestart
+				\chemname{\Rest}{Carbonsäure} 
+				\arrow(.south--.north west){-U>[*{0.south west}\chemname{\EDC}{EDC}][][][.5][]}[-90,4] 
+				\chemname{\OAcylisourea}{O-Acylisourea Zwischenprodukt}
+				\arrow{-U>[*{0.south}\chemname{\NHS}{NHS}][][][.5][]}[,3]
+				\chemname{\Ester}{NHS Ester Zwischenprodukt}
+				\arrow{-U>[*{0.north east}\chemname{\PrimAmin}{Primäres Amin}][*{0.east}\chemname{\NHS}{NHS}][][.3][60]}[90,4]
+				\chemname{\Amidbindung}{Bildung der Amidbindung}
+				\schemestop
+			\end{minipage}
+		}
+	\end{center}
+\end{figure}
+
+\vspace{3cm}
+
+%%% Ablaufschemata der Amidhydrolyse
+
+%% Makros
+
+% Wasser
+\newcommand{\Wasser}{
+	\setchemfig{angle increment = 30}
+	\chemfig{H-[1,0.75]@{n1}\lewis{13,O}-[-1,0.75]H}
+}
+
+% OH-Ion
+\newcommand{\OH}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	H@{oh}\chemabove{\lewis{026,O}}{\hspace{12pt}\rlap{-}}
+	}
+}
+
+
+% Amidbindung allgemein (Amidbindung)
+\renewcommand{\Amidbindung}{
+	\chemfig{
+		[:30,1]\textcolor{red}{\textbf R_1}-@{n2}(=[:90,.75]O)-[:-30]\chembelow{N}{H}-\textcolor{red}{\textbf R_2}
+	}	
+}
+
+% Amidbindung mit addiertem Wasser und protoniert im neutralen (AmidbindungII)
+\newcommand{\AmidbindungII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](-[-3.5,0.75]HO)(-[@{n3}3,0.75]@{n4}\lewis{024,O})-[@{n5}-1]@{n6}\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% protonierte Amidbindung (AmidbindungIII)
+\newcommand{\AmidbindungIII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\lewis{24,O}H)(-[-3,0.2,,,draw = none]@{pa1}\hspace{-5pt}\rlap{+})-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung mit addiertem Wasser im sauren (AmidbindungIV)
+\newcommand{\AmidbindungIV}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\lewis{24,O}H)(-[-3.5,0.75]HO)-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-Wasser-addukt im sauren mit protoniertem Stickstoff (AmidbindungV)
+\newcommand{\AmidbindungV}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](-[@{av1}3,0.75]\lewis{24,O}-[@{av2},0.75]@{av3}H)(-[-3.5,0.75]HO)-[@{av4}-1]\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-OH-addukt im basischen (AmidbindungVI)
+\newcommand{\AmidbindungVI}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](-[3,0.75]\chemabove{\lewis{024,O}}{\hspace{10pt}\rlap{-}})(-[-3.5,0.75]HO)-[-1]\chembelow{N}{H}-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Amidbindung-OH-addukt mit protoniertem Stickstoff im basischen (AmibdingungVII)
+\newcommand{\AmidbindungVII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+		\textcolor{red}{\textbf R_1}-[1](-[@{aoh1}3,0.75]@{aoh2}\chemabove{\lewis{024,O}}{\hspace{10pt}\rlap{-}})(-[-3.5,0.75]HO)-[@{aoh3}-1]@{aoh4}\chembelow{N}{\hspace{-5pt}\rlap{+}}H_2-[1]\textcolor{red}{\textbf R_2}
+	}
+}
+
+% Carbonsäure
+\newcommand{\Acid}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	\textcolor{red}{\textbf R_1}-[1](=[3,0.75]O)-[-1]OH
+	}
+}
+
+% primäres Amin
+\renewcommand{\PrimAmin}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	H_2\lewis{2,N}-\textcolor{red}{\textbf R_2}
+	}
+}
+
+% protoniertes Amin
+\newcommand{\PrimAminII}{
+	\setchemfig{angle increment = 30}
+	\chemfig{
+	H_3\chemabove{N}{\hspace{-5pt}\rlap{+}}-\textcolor{red}{\textbf R_2}
+	}
+}
+
+%% Hydrolyse im neutralen
+
+\begin{figure}[H]
+	\begin{center}
+		\scalebox{0.75}{\begin{minipage}{\textwidth}
+			\setchemfig{scheme debug = false}
+			\schemestart
+				\Wasser
+				\hspace{1cm}
+				\chemname{\Amidbindung}{N1}
+				\chemmove[shorten <= 5pt, shorten >= 2pt]{\draw[dashed](n1)..controls +(north east:1.5cm) and +(south:2.75cm)..(n2);}
+				\arrow{<=>}
+				\chemname{\AmidbindungII}{N2}
+				\chemmove[shorten <= 5pt, shorten >= 2pt]{\draw[dashed](n4)..controls +(east:0.5cm) and +(east:0.75cm)..(n3);
+															\draw[dashed](n5)..controls +(north east:0.5cm) and +(north:0.5cm)..(n6);}
+				\arrow{<=>}
+				\chemname{\Acid}{N3} \+ \chemname{\PrimAmin}{N4}
+			\schemestop
+			\end{minipage}
+		}
+	\end{center}
+\end{figure}
+
+\vspace{3cm}
+
+%% Hydrolyse im sauren
+
+\begin{figure}[H]
+	\begin{flushleft}
+		\scalebox{0.75}{\begin{minipage}{\textwidth}
+				\setchemfig{scheme debug = false}
+				\schemestart
+					\Wasser
+					\hspace{0.1cm}
+					\chemname{\AmidbindungIII}{S1}
+					\chemmove[shorten <= 5pt, shorten >= 5pt]{\draw[dashed](n1)..controls +(north east:1.5cm) and +(240:2.75cm)..(pa1);}
+					\arrow{<=>[-H$_{\mathrm{aq}}^{\tiny +}$][+H$_{\mathrm{aq}}^{\tiny +}$]}
+					\chemname{\AmidbindungIV}{S2}
+					\arrow{<=>[+H$_{\mathrm{aq}}^{\tiny +}$][-H$_{\mathrm{aq}}^{\tiny +}$]}
+					\chemname{\AmidbindungV}{S3}
+					\chemmove[shorten <= 2pt, shorten >= 2pt]{\draw[dashed](av2)..controls +(north:1.5cm) and +(west:1.5cm)..(av1);
+																					\draw[dashed](av4)..controls +(350:0.75cm) and +(south east:0.75cm)..(av3);}
+					\arrow{<=>}
+					\chemname{\Acid}{S4} \+ \chemname{\PrimAminII}{S5}
+				\schemestop
+		\end{minipage}
+	}
+	\end{flushleft}
+\end{figure}
+
+\vspace{3cm}
+
+% Hydrolyse im basischen
+
+\begin{figure}[H]
+	\begin{flushleft}
+		\scalebox{0.75}{\begin{minipage}{\textwidth}
+				\setchemfig{scheme debug = false}
+				\schemestart
+					\OH
+					\hspace{0.5cm}
+					\chemname{\Amidbindung}{B1}
+					\chemmove[shorten <= 5pt, shorten >= 2pt]{\draw[dashed](oh)..controls +(330: 1cm) and +(260:1cm)..(n2);
+					}
+					\arrow{<=>}
+					\chemname{\AmidbindungVI}{B2}
+					\arrow{<=>[+H$_{\mathrm{aq}}^{\tiny +}$][-H$_{\mathrm{aq}}^{\tiny +}$]}
+					\chemname{\AmidbindungVII}{B3}
+					\chemmove[shorten <= 5pt, shorten >= 2pt]{\draw[dashed](aoh2)..controls +(east:0.5cm) and +(east:0.75cm)..(aoh1);
+																					\draw[dashed](aoh3)..controls +(north east:0.5cm) and +(north:0.5cm)..(aoh4);
+					}
+					\arrow{<=>}
+					\chemname{\Acid}{B4} \+ \chemname{\PrimAmin}{B5}
+				\schemestop
+			\end{minipage}
+		}
+	\end{flushleft}
+\end{figure}
+
+
+%%% Molekularer Aufbau der Experimente
+
+%% Makros
+
+% Polymerklammern (für Details siehe Dokumentation des Chemfig Paketes)
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+	\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+	\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+	\chemmove{%
+		\node[at=(#4),yshift=(\delimvshift)]{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim width0pt\right.$};
+		\node[at=(#5),yshift=(\delimvshift)]{$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};
+	} % \chemmove
+} % \def\delimleft\makebraces
+
+% Beispiel: Polyethylen
+%
+% \setpolymerdelim[]
+% \chemfig{\vphantom{CH_2}-[@{op,.75}]CH_2-CH_2-[@{cl,0.25}]} 
+% \makebraces[5pt,5pt]{\!n}{op}{cl}
+
+% Diese Befehle sorgen dafür dass funktionelle Gruppen immer am O bzw. C angesetzt werden
+\definesubmol\OH[HO]{OH}
+\definesubmol\OR[RO]{OR}
+
+% CMA moleküle (\CMA - normales CMA und \CMAr - rotieretes CMA)
+\definesubmol\CMA{
+	(-[::70,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::30](-[::-90,0.75]-[::-30,0.75]!\OR)-[::-40,1.75]O-[::80,1.5]
+}
+
+
+\definesubmol\CMAVerbindung{
+	O-[::60]-[::30,0.75](-[::150](-[::-60]...)-[::-140,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::-70,1.75]O-[::80,1.5]
+}
+
+\definesubmol\CMAr{
+	(-[::-30](-[::90,0.75]-[::30,0.75]!\OR-[@{left,0.25}::-30,,,,draw=none])-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-120,0.75]!\OR-[@{right,0.25}::10,,,,draw=none])-[::-40,1.2]
+}
+
+\definesubmol\CMArVerbindung{
+	(-[::-30](-[::90,0.75]!\OR)-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-40,1.2]-[::60]...)-[::-70,0.75]-[::30]O
+}
+
+% Allylamin Reste
+
+%DLC-Substrat zu Allylamin
+\definesubmol\AllylaminOF{
+	C(-[::90,,,,thick]C-[::0,,,,thick]C)(-[::-90,,,,thick]C-[::0,,,,thick]C)-[::-30]-[::60]-[::-60]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60,,,,,red,thick](=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})
+}
+
+% Allylamin zu AFM-Spitze
+\definesubmol\AllylaminSP{
+	(=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})-[::-60,,,,red,thick]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60]-[::-60]-[::60]C(-[::60,,,,thick]C-[::0,,,,thick]C)(-[::-120,,,,thick]C-[::0,,,,thick]C)
+}
+
+\vspace{3cm}
+
+%% Aufbau
+
+\begin{figure}[H]
+	\begin{flushleft}
+		\scalebox{1}{\begin{minipage}{\textwidth}
+				\setpolymerdelim[]
+				\setchemfig{atom style={rotate=0,scale=0.5}}
+				\chemfig{[:0]!\AllylaminOF-[::-60]!\CMAVerbindung-[@{leftOut,0.5}::-100]O-[::60]-[::-30,0.001,,,,draw=none]!\CMAr-[::60]O-[::-60]-[::30,0.001,,,,draw=none]!\CMA-[@{rightOut,0.5}::-100]O-[::60]-[::-30,0.001,,,draw=none]!\CMArVerbindung-[::60]!\AllylaminSP}
+				%\makebraces[45pt,30pt]{\!n}{left}{right}
+				\makebraces[30pt,50pt]{\!n}{leftOut}{rightOut}
+			\end{minipage}
+		} % scalebox
+	\end{flushleft}
+\end{figure}
+
+
+\end{document}

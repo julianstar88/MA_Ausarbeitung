@@ -1,0 +1,102 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Zielsetzung}{1}{section.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Kopplungschemie}{1}{section.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Oberfl\IeC {\"a}chenfunktionalisierung via Kohlenstoffanker}{2}{subsection.1.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Kopplung der Spacermolek\IeC {\"u}le an funktionalisierte Oberfl\IeC {\"a}chen}{3}{subsection.1.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Hydrolyse der Amidbindung}{3}{section.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Sauer katalysierte Amidhydrolyse}{4}{subsection.1.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}Basisch katalysierte Amidhydrolyse}{5}{subsection.1.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.3}Energieprofil der Amidhydrolyse ohne Krafteinfluss}{6}{subsection.1.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.4}Bindungskinetik unter Krafteinfluss}{6}{subsection.1.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Rasterkraftmikroskop}{8}{section.1.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Einzelmolek\IeC {\"u}lspektroskopie am Rasterkraftmikroskop}{9}{section.1.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}Molekularer Aufbau des Versuchssystems}{9}{subsection.1.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.2}Kraftkurven}{10}{subsection.1.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.3}Aufl\IeC {\"o}sungsgrenzen der Kraftexperimente}{14}{subsection.1.5.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Material und Methoden}{16}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Material}{16}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Chemikalien}{16}{subsection.2.1.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Substrate}{17}{subsection.2.1.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Ger\IeC {\"a}te und Software}{17}{subsection.2.1.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Methoden}{17}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Oberfl\IeC {\"a}chenfunktionalisierung der Substrate}{17}{subsection.2.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Pr\IeC {\"a}paration der Funktionalisierungsl\IeC {\"o}sungen}{18}{section*.30}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Oberfl\IeC {\"a}chenfunktionalisierung}{18}{section*.31}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Stoppen der Funktionalisierung}{18}{section*.32}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Entfernen nicht gebundener Reaktanden}{18}{section*.33}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Vorbereitung der Versuche}{18}{subsection.2.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Pr\IeC {\"a}paration der Kopplungsl\IeC {\"o}sungen}{18}{section*.34}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kopplung der Spacer an die Substrate}{18}{section*.35}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Durchf\IeC {\"u}hrung der Versuche}{19}{subsection.2.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kalibrierung des Cantilevers}{19}{section*.36}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Auswahl der x,y-Position des Force-Clamp-Experiments auf dem Substrat}{19}{section*.37}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Start des Force-Clamp-Experiments}{20}{section*.38}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Kategorisierung der Kraftkurven}{21}{subsection.2.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kategorie A}{22}{section*.42}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kategorie B}{23}{section*.44}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kategorie C}{24}{section*.46}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kategorie D}{25}{section*.48}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Kategorie E}{26}{section*.50}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Bemerkungen zu den Kraftkurven}{27}{section*.52}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Doppelpeak}{27}{section*.53}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\nonumberline Maximale Clampzeit}{28}{section*.56}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Auswertung der Versuchsergebnisse}{28}{subsection.2.2.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Ergebnisse}{30}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Diskussion}{36}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Fazit}{43}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Ausblick}{41}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Literatur}{42}{chapter*.11}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}\IeC {\"U}berlagerung der normierten Kraft-Abstand-Kurven von Clampereignissen}{45}{appendix.A}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Mechanische Eigenschaften der Kraft-Abstand-Kurven von Clampereignissen}{46}{appendix.B}% 

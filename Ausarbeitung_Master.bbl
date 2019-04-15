@@ -1,0 +1,545 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{ClausenSchaumann.2018}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=1626a918bb7a2e54816123afdd8bc323}{%
+           family={Clausen-Schaumann},
+           familyi={C\bibinithyphendelim S\bibinitperiod},
+           given={Hauke},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=a8d5f99be02288dd4ad95b70f3df6de1}{%
+           family={Blaser},
+           familyi={B\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{fullhash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{bibnamehash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{authorbibnamehash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{authornamehash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{authorfullhash}{1626a918bb7a2e54816123afdd8bc323}
+      \strng{editorbibnamehash}{a8d5f99be02288dd4ad95b70f3df6de1}
+      \strng{editornamehash}{a8d5f99be02288dd4ad95b70f3df6de1}
+      \strng{editorfullhash}{a8d5f99be02288dd4ad95b70f3df6de1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Pers{ö}nliche Mitteilung: E-Mail}
+      \field{year}{2018}
+    \endentry
+    \entry{Latscha.2016}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2276ee294989444a6eef814871313f8b}{%
+           family={Latscha},
+           familyi={L\bibinitperiod},
+           given={Hans\bibnamedelima Peter},
+           giveni={H\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=32527f8140e78402ad5fa6f020a1ddfd}{%
+           family={Kazmaier},
+           familyi={K\bibinitperiod},
+           given={Uli},
+           giveni={U\bibinitperiod}}}%
+        {{hash=16b717b7f31b7fd3115cfebc114ace47}{%
+           family={Klein},
+           familyi={K\bibinitperiod},
+           given={Helmut},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{d7c57f7d94422173c00cbf687894e7f4}
+      \strng{fullhash}{d7c57f7d94422173c00cbf687894e7f4}
+      \strng{bibnamehash}{d7c57f7d94422173c00cbf687894e7f4}
+      \strng{authorbibnamehash}{d7c57f7d94422173c00cbf687894e7f4}
+      \strng{authornamehash}{d7c57f7d94422173c00cbf687894e7f4}
+      \strng{authorfullhash}{d7c57f7d94422173c00cbf687894e7f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-46179-2}
+      \field{title}{Organische Chemie: Chemie Basiswissen II}
+      \field{year}{2016}
+      \verb{doi}
+      \verb 10.1007/978-3-662-46180-8
+      \endverb
+    \endentry
+    \entry{Leisering.2017}{book}{}
+      \name{author}{2}{}{%
+        {{hash=1e2430f9f96a4953f4ae65cb90509ced}{%
+           family={Leisering},
+           familyi={L\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9f3dfa87b45db3cb4c8bb0129ce01603}{%
+           family={Schalley},
+           familyi={S\bibinitperiod},
+           given={Christoph\bibnamedelima A.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{5ca08a627c42f077442924cbae518a45}
+      \strng{fullhash}{5ca08a627c42f077442924cbae518a45}
+      \strng{bibnamehash}{5ca08a627c42f077442924cbae518a45}
+      \strng{authorbibnamehash}{5ca08a627c42f077442924cbae518a45}
+      \strng{authornamehash}{5ca08a627c42f077442924cbae518a45}
+      \strng{authorfullhash}{5ca08a627c42f077442924cbae518a45}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-3-662-53851-7}
+      \field{title}{Tutorium Reaktivit{ä}t und Synthese}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1007/978-3-662-53852-4
+      \endverb
+    \endentry
+    \entry{Hadener.2006}{book}{}
+      \name{author}{2}{}{%
+        {{hash=0ab3833793e2b42e73850a0921cbda9c}{%
+           family={H{ä}dener},
+           familyi={H\bibinitperiod},
+           given={Alfons},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bec03e8292dd9db901dde7e08a8fe62c}{%
+           family={Kaufmann},
+           familyi={K\bibinitperiod},
+           given={Heinz},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Basel}%
+      }
+      \list{publisher}{1}{%
+        {Birkh{ä}user Verlag}%
+      }
+      \strng{namehash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \strng{fullhash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \strng{bibnamehash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \strng{authorbibnamehash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \strng{authornamehash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \strng{authorfullhash}{6f2b3b37af31dff1f4fd2ecad6a36d67}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Die 11. Auflage dieser etablierten Einf{ü}hrung wurde sorgf{ä}ltig {ü}berarbeitet und erweitert. Das Buch vermittelt Studierenden der Chemie im Haupt- und Nebenfach das Verst{ä}ndnis f{ü}r die Grundprinzipien der organischen Chemie und erm{ö}glicht dar{ü}ber hinaus auch eine Vertiefung des in der Schule gebotenen Lehrstoffes. Das bew{ä}hrte Konzept, die Bindungsverh{ä}ltnisse in organischen Molek{ü}len, ihren r{ä}umlichen Bau und die grundlegenden Reaktionstypen getrennt von Nomenklatur und Systematik zu behandeln, wurde beibehalten. Metallorganische Reagenzien, Methoden der asymmetrischen Synthese und die Prinzipien katalytischer Prozesse werden ebenso ber{ü}cksichtigt wie die wichtigsten Methoden zur Charakterisierung organischer Verbindungen. Eine {Ü}bersicht {ü}ber eine Reihe von Naturstoffklassen vermittelt die Grundlagen zum Verst{ä}ndnis biochemischer Prinzipien. Zahlreiche {Ü}bungen vertiefen den Stoff und erleichtern die Selbstkontrolle.}
+      \field{edition}{11., {ü}berarbeitete und erweiterte Auflage}
+      \field{isbn}{9783764370404}
+      \field{title}{Grundlagen der organischen Chemie}
+      \field{year}{2006}
+      \verb{doi}
+      \verb 10.1007/978-3-7643-7420-4
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/978-3-7643-7420-4
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/978-3-7643-7420-4
+      \endverb
+      \keyw{Chemistry;Chemistry,Organic;Organische Chemie}
+    \endentry
+    \entry{Grandbois.1999}{article}{}
+      \name{author}{5}{}{%
+        {{hash=bb37880b7d483ba90bf9dd8ddb38143d}{%
+           family={Grandbois},
+           familyi={G\bibinitperiod},
+           given={Michel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1825d5834fdb0ae447589df0a6080254}{%
+           family={Beyer},
+           familyi={B\bibinitperiod},
+           given={Martin\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=35ccb7a2faf7c44b81d1c4357d94e41e}{%
+           family={Rief},
+           familyi={R\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1626a918bb7a2e54816123afdd8bc323}{%
+           family={Clausen-Schaumann},
+           familyi={C\bibinithyphendelim S\bibinitperiod},
+           given={Hauke},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f80b12bad7dc9e8ec51109737e6913c0}{%
+           family={Gaub},
+           familyi={G\bibinitperiod},
+           given={Hermann\bibnamedelima E.},
+           giveni={H\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7e2ba434dde754410269c9abad59df4}
+      \strng{fullhash}{c0ec487cc1063d6563745f067e15f502}
+      \strng{bibnamehash}{c0ec487cc1063d6563745f067e15f502}
+      \strng{authorbibnamehash}{c0ec487cc1063d6563745f067e15f502}
+      \strng{authornamehash}{b7e2ba434dde754410269c9abad59df4}
+      \strng{authorfullhash}{c0ec487cc1063d6563745f067e15f502}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rupture force of single covalent bonds under an external load was measured with an atomic force microscope (AFM). Single polysaccharide molecules were covalently anchored between a surface and an AFM tip and then stretched until they became detached. By using different surface chemistries for the attachment, it was found that the silicon-carbon bond ruptured at 2.0 +- 0.3 nanonewtons, whereas the sulfur-gold anchor ruptured at 1.4 +- 0.3 nanonewtons at force-loading rates of 10 nanonewtons per second. Bond rupture probability calculations that were based on density functional theory corroborate the measured values.}
+      \field{issn}{0036-8075}
+      \field{journaltitle}{Science}
+      \field{number}{283}
+      \field{title}{How Strong Is a Covalent Bond?}
+      \field{year}{1999}
+    \endentry
+    \entry{Smith.1998}{article}{}
+      \name{author}{2}{}{%
+        {{hash=639b662df333654688dc145235d7b96b}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Robert\bibnamedelima M.},
+           giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=fd5aedbb9804d506fcc61b93a1dc3ba0}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \strng{fullhash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \strng{bibnamehash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \strng{authorbibnamehash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \strng{authornamehash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \strng{authorfullhash}{8fd71f5dee1e76c42a0573d234052cfc}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0002-7863}
+      \field{journaltitle}{Journal of the American Chemical Society}
+      \field{number}{35}
+      \field{title}{The pH-Rate Profile for the Hydrolysis of a Peptide Bond}
+      \field{volume}{120}
+      \field{year}{1998}
+      \field{pages}{8910\bibrangedash 8913}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1021/ja9804565
+      \endverb
+    \endentry
+    \entry{Bundgaard.1991}{article}{}
+      \name{author}{2}{}{%
+        {{hash=17e65e7a5daba455d6601732b4a32c63}{%
+           family={Bundgaard},
+           familyi={B\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c3e7e2c79fcae9efbb64ab07c47bf739}{%
+           family={Rasmussen},
+           familyi={R\bibinitperiod},
+           given={G.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{7d820192211b80c339a85b12932be456}
+      \strng{fullhash}{7d820192211b80c339a85b12932be456}
+      \strng{bibnamehash}{7d820192211b80c339a85b12932be456}
+      \strng{authorbibnamehash}{7d820192211b80c339a85b12932be456}
+      \strng{authornamehash}{7d820192211b80c339a85b12932be456}
+      \strng{authorfullhash}{7d820192211b80c339a85b12932be456}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Pharmaceutical Research}
+      \field{title}{Prodrugs of Peptides. 11. Chemical and Enzymatic Hydrolysis Kinetics of N-Acyloxymethyl Derivatives of a Peptide-like Bond}
+      \field{year}{1991}
+    \endentry
+    \entry{Song.2000}{article}{}
+      \name{author}{4}{}{%
+        {{hash=aed6c50b68db30582d6c3ab17b104522}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=413ef64e0f6aa4df8bea3b7ae949d972}{%
+           family={Schowen},
+           familyi={S\bibinitperiod},
+           given={R.\bibnamedelimi L.},
+           giveni={R\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=0a9f85cd09b3a8adf25323f772427245}{%
+           family={Borchardt},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi T.},
+           giveni={R\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=644aa5b03329f24a671432c1a952e489}{%
+           family={Topp},
+           familyi={T\bibinitperiod},
+           given={E.\bibnamedelimi M.},
+           giveni={E\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f246e7a3f4b37beb5d0fb97948ebc6aa}
+      \strng{fullhash}{0089d95cb644d194232c17f8efaf4fb3}
+      \strng{bibnamehash}{0089d95cb644d194232c17f8efaf4fb3}
+      \strng{authorbibnamehash}{0089d95cb644d194232c17f8efaf4fb3}
+      \strng{authornamehash}{f246e7a3f4b37beb5d0fb97948ebc6aa}
+      \strng{authorfullhash}{0089d95cb644d194232c17f8efaf4fb3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Effect of `pH' on the rate of asparagine deamidation in polymeric formulations: `pH'-rate profile}
+      \field{year}{2000}
+    \endentry
+    \entry{Zahn.2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=930215ef692c663634814509e9679e4e}{%
+           family={Zahn},
+           familyi={Z\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{930215ef692c663634814509e9679e4e}
+      \strng{fullhash}{930215ef692c663634814509e9679e4e}
+      \strng{bibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorbibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authornamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorfullhash}{930215ef692c663634814509e9679e4e}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1520-6106}
+      \field{journaltitle}{The Journal of Physical Chemistry B}
+      \field{number}{44}
+      \field{title}{Theoretical Study of the Mechanisms of Acid-Catalyzed Amide Hydrolysis in Aqueous Solution}
+      \field{volume}{107}
+      \field{year}{2003}
+      \field{pages}{12303\bibrangedash 12306}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1021/jp034175h
+      \endverb
+    \endentry
+    \entry{Zahn.2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=930215ef692c663634814509e9679e4e}{%
+           family={Zahn},
+           familyi={Z\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{930215ef692c663634814509e9679e4e}
+      \strng{fullhash}{930215ef692c663634814509e9679e4e}
+      \strng{bibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorbibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authornamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorfullhash}{930215ef692c663634814509e9679e4e}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00092614}
+      \field{journaltitle}{Chemical Physics Letters}
+      \field{number}{1-2}
+      \field{title}{Car--Parrinello molecular dynamics simulation of base-catalyzed amide hydrolysis in aqueous solution}
+      \field{volume}{383}
+      \field{year}{2004}
+      \field{pages}{134\bibrangedash 137}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1016/j.cplett.2003.11.015
+      \endverb
+    \endentry
+    \entry{Zahn.2004b}{article}{}
+      \name{author}{1}{}{%
+        {{hash=930215ef692c663634814509e9679e4e}{%
+           family={Zahn},
+           familyi={Z\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{930215ef692c663634814509e9679e4e}
+      \strng{fullhash}{930215ef692c663634814509e9679e4e}
+      \strng{bibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorbibnamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authornamehash}{930215ef692c663634814509e9679e4e}
+      \strng{authorfullhash}{930215ef692c663634814509e9679e4e}
+      \field{extraname}{3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Journal of Organic Chemistry}
+      \field{number}{19}
+      \field{title}{On the Role of Water in Amide Hydrolysis}
+      \field{volume}{2004}
+      \field{year}{2004}
+      \field{pages}{4020\bibrangedash 4023}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1002/ejoc.200400316
+      \endverb
+    \endentry
+    \entry{Hayworth}{article}{}
+      \name{author}{1}{}{%
+        {{hash=56cc8b3e7e14baca97713732b0f97794}{%
+           family={Hayworth},
+           familyi={H\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{56cc8b3e7e14baca97713732b0f97794}
+      \strng{fullhash}{56cc8b3e7e14baca97713732b0f97794}
+      \strng{bibnamehash}{56cc8b3e7e14baca97713732b0f97794}
+      \strng{authorbibnamehash}{56cc8b3e7e14baca97713732b0f97794}
+      \strng{authornamehash}{56cc8b3e7e14baca97713732b0f97794}
+      \strng{authorfullhash}{56cc8b3e7e14baca97713732b0f97794}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Thermofischer Instructions for NHS and EDC Reactions}
+    \endentry
+    \entry{Fischer.2010}{book}{}
+      \name{editor}{2}{}{%
+        {{hash=d4458ea5a500442d8f5d965dc07a0c3e}{%
+           family={Nico},
+           familyi={N\bibinitperiod},
+           given={J.\bibnamedelimi Mol},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7f4c22bb8639ca5cd1c34c71c3a0ae01}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Marcel\bibnamedelimb J.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{740df72ded66a5c595f53b21d1cb0150}
+      \strng{fullhash}{740df72ded66a5c595f53b21d1cb0150}
+      \strng{bibnamehash}{740df72ded66a5c595f53b21d1cb0150}
+      \strng{editorbibnamehash}{740df72ded66a5c595f53b21d1cb0150}
+      \strng{editornamehash}{740df72ded66a5c595f53b21d1cb0150}
+      \strng{editorfullhash}{740df72ded66a5c595f53b21d1cb0150}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Surface plasmon resonance (SPR) is one of the leading tools in biomedical research. The challenge in its use is the controlled positioning of one of the components of an interaction on a carefully designed surface. Many attempts in interaction analysis fail due to the non-functional or unsuccessful immobilization of a reactant onto the complex matrix of that surface. The most common technique for linking ligands covalently to a hydrophilic solid surface is amine coupling via reactive esters. In this chapter detailed methods and problem discussions will be given to assist in fast decision analysis to optimize immobilization and regeneration. Topics in focus are different coupling techniques for small and large molecules, streptavidin-biotin sandwich immobilization, and optimizing regeneration conditions.}
+      \field{title}{Surface Plasmon Resonance: Methods and Protocols}
+      \field{volume}{627}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 10.1007/978-1-60761-670-2{\textunderscore }3
+      \endverb
+      \keyw{Aldehydes/chemistry;Amination;Amines/chemistry;Biotin/chemistry;Carbodiimides/chemistry;Immobilized Proteins/analysis/chemistry;Oxidation-Reduction;Streptavidin/chemistry;Succinimides/chemistry;Surface Plasmon Resonance/methods;Surface Properties}
+    \endentry
+    \entry{Nojima.2009}{article}{}
+      \name{author}{4}{}{%
+        {{hash=b28803f249802bc56f9af37d4a363cab}{%
+           family={Nojima},
+           familyi={N\bibinitperiod},
+           given={Yasuhiro},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=68b3720cb2196d293e09c60e90fac554}{%
+           family={Iguchi},
+           familyi={I\bibinitperiod},
+           given={Kazuma},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f6b94b184f157ef3e102784dde6b269f}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Yosuke},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=80f4eb4228da14cd861e07c5d3cd1294}{%
+           family={Sato},
+           familyi={S\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5485f91c9178a2c96149924449521773}
+      \strng{fullhash}{9862610a950f321082f3f6f0a52b1dc7}
+      \strng{bibnamehash}{9862610a950f321082f3f6f0a52b1dc7}
+      \strng{authorbibnamehash}{9862610a950f321082f3f6f0a52b1dc7}
+      \strng{authornamehash}{5485f91c9178a2c96149924449521773}
+      \strng{authorfullhash}{9862610a950f321082f3f6f0a52b1dc7}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0918-6158}
+      \field{journaltitle}{Biological {\&} Pharmaceutical Bulletin}
+      \field{number}{3}
+      \field{title}{The pH-Dependent Formation of PEGylated Bovine Lactoferrin by Branched Polyethylene Glycol (PEG)-N-Hydroxysuccinimide (NHS) Active Esters}
+      \field{volume}{32}
+      \field{year}{2009}
+      \field{pages}{523\bibrangedash 526}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1248/bpb.32.523
+      \endverb
+    \endentry
+    \entry{Montalbetti.2005}{article}{}
+      \name{author}{2}{}{%
+        {{hash=4e8081dd1e27446f77706fc83c93b999}{%
+           family={Montalbetti},
+           familyi={M\bibinitperiod},
+           given={Christian\bibnamedelima A.G.N.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=4b8af8ef789a25d26d49ffef7816f69c}{%
+           family={Falque},
+           familyi={F\bibinitperiod},
+           given={Virginie},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{703576fd549d06703b8cda54b0837916}
+      \strng{fullhash}{703576fd549d06703b8cda54b0837916}
+      \strng{bibnamehash}{703576fd549d06703b8cda54b0837916}
+      \strng{authorbibnamehash}{703576fd549d06703b8cda54b0837916}
+      \strng{authornamehash}{703576fd549d06703b8cda54b0837916}
+      \strng{authorfullhash}{703576fd549d06703b8cda54b0837916}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00404020}
+      \field{journaltitle}{Tetrahedron}
+      \field{number}{46}
+      \field{title}{Amide bond formation and peptide coupling}
+      \field{volume}{61}
+      \field{year}{2005}
+      \field{pages}{10827\bibrangedash 10852}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.tet.2005.08.031
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

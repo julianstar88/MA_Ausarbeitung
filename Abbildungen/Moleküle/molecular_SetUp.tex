@@ -1,0 +1,240 @@
+%%% Dokumentenklasse
+\documentclass[10pt,a4paper,draft=false]{scrreprt}
+
+%%% Kopf & Fußzeile
+\usepackage[
+automark,			%automatische Aktualisierung des Kolumnentitels in der Kopfzeile
+headsepline,		%Strich UNTER der Kopfzeile
+footsepline			%Strich ÜBER der Fußzeile
+]{scrpage2}
+
+%%% Sprach Pakete
+\usepackage[ngerman]{babel}
+%\usepackage[ansinew]{inputenc} Falls es Probleme mit ä,ö,ü ... gibt, sollte das Packet in dieser Zeile wieder aktiviert werden 
+\usepackage[utf8]{inputenc} % wenn der Kommentar aus der oberen Zeile entfehrnt wird, muss diese Zeile kommentiert werden
+\usepackage[babel, german=quotes]{csquotes}
+\usepackage[T1]{fontenc}
+
+%%% Style Packete
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{longtable} 	
+\usepackage{multirow,array,booktabs} 
+\usepackage{tabularx}
+\usepackage[bf, flushleft]{caption}[2002/08/03]
+\usepackage{subcaption}
+\usepackage{threeparttable}
+\usepackage{upgreek} % Nicht kursive Griechische Buchstaben einbinden
+\usepackage{textgreek} % For greek letters in the text
+
+%%% Mathematik Packete
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage[amssymb]{SIunits} % Einbinden von SI - Einheiten
+
+%%%Chemie Packete
+\usepackage{chemmacros}
+\usepackage{chemformula}
+\usepackage{chemfig}
+
+%%% Abkürzungen
+\usepackage[printonlyused,withpage]{acronym}
+
+%%% Spaltentypen in Tabellen (mit dem Packet "tabularx")
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % linksbündig mit Breitenangabe
+\newcolumntype{C}{>{\centering\arraybackslash}X} % zentriert mit Breitenangabe
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X} % rechtsbündig mit Breitenangabe
+
+% Hyperref: Klickbare Verweise in PDF-Dokumenten bei Verwendung von pdftex.
+%           Einstellbare Optionen für die PDF-Dokumenteigenschaften:
+%           - pdftitle:  Titel des Dokuments
+%           - pdfauthor: Autor der Arbeit
+%			- linkbordercolor: Farbe der Boxen um den Link (=interner Link)
+%			- colorlinks: Text des Links (=interner Link) farbig machen
+%			- linkcolor: Farbe des Links (=interner Link)
+%			- linktocpage: boxen um die Seitenzahlen, statt den Text
+%           ACHTUNG: Leerzeichen sind in den Optionen nicht zulässig. Am
+%           besten geschützte Leerzeichen (~) benutzen.
+\usepackage[linkbordercolor=white,colorlinks=true,linkcolor=blue]{hyperref} 
+
+%--------------------Tabellenformat--------------------
+%\begin{table}[H]
+%	\begin{threeparttable}
+%	\caption[text]{Text}
+%		\begin{tabularx}{\textwidth}{X X X X}
+%		
+%		\end{tabularx}
+%		\begin{tablenotes}
+%		\item[#] note...
+%		\end{tablenotes}
+%	\label{text}
+%	\end{threeparttable}
+%\end{table}
+%--------------------Tabellenformat--------------------
+
+
+%%%% Bibliografie
+%\usepackage[
+%backend=biber,
+%sorting=none,
+%style=numeric-comp,    		   % Zitierstil
+%isbn=false,     % isbn nicht anzeigen, gleiches geht mit nahezu allen anderen Feldern
+%url=false,		%url wird nicht angezeigt
+%doi=true,		%doi wird angezeigt
+%eprint=false,	%eprint wird nicht angezeigt
+%pagetracker=true,          % ebd. bei wiederholten Angaben (false=ausgeschaltet, page=Seite, spread=Doppelseite, true=automatisch)
+%ibidtracker=true,
+%maxbibnames=50,            % maximale Namen, die im Literaturverzeichnis angezeigt werden (ich wollte alle)
+%maxcitenames=3,            % maximale Namen, die im Text angezeigt werden, ab 4 wird u.a. nach den ersten Autor angezeigt
+%autocite=inline,           % regelt Aussehen für \autocite (inline=\parancite)
+%block=space,               % kleiner horizontaler Platz zwischen den Feldern
+%%backref=true,              % Seiten anzeigen, auf denen die Referenz vorkommt
+%backrefstyle=three+,       % fasst Seiten zusammen, z.B. S. 2f, 6ff, 7-10
+%date=short,                % Datumsformat
+%]{biblatex}
+%\setlength{\bibitemsep}{1em}     % Abstand zwischen den Literaturangaben
+%\setlength{\bibhang}{2em}        % Einzug nach jeweils erster Zeile
+
+%--------------------------------------------------
+
+% %% Bibliographie laden
+%\bibliography{Pfad} 
+
+%%% Kapitel einbinden
+%\includeonly{
+%Liste der Kapitel
+%}
+%--------------------------------------------------
+
+%\author{Julian Blaser}
+%\title{\Huge \textbf{Titel}}
+%\date{\today}
+
+%------------Fancy Header------------------
+%\pagestyle{fancy}
+%\renewcommand{\sectionmark}[1]{\markboth{\emph{#1}}{}}
+%\fancyhf{}
+
+%\fancyhead[LE,RO]{\textbf{\thepage}}
+%\fancyhead[LO,RE]{\textbf{\leftmark}}
+%\fancyfoot[LE,RO]{\author{Julian Blaser}}
+%\fancyfoot[LO,RE]{\date{\today}}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0.5pt}
+%----------Ende Fancy Header---------------
+
+
+%%%% ------------Kopf&Fußzeile KOMA Skript------------------
+%\pagestyle{scrheadings}
+%
+%\ihead{\raisebox{1.mm}{\headmark}}
+%\ohead{\raisebox{1.mm}{\pagemark}}
+%\chead{}
+%\ofoot{\raisebox{-1.5mm}{Julian Blaser}}
+%\ifoot{\raisebox{-1.5mm}{Hochschule München}}
+%\cfoot{}
+%
+%\setheadsepline{.5pt}
+%\setfootsepline{.5pt}
+%
+%%%% ------------Kopf&Fußzeile KOMA Skript------------------
+
+\setlength{\parindent}{0em} % Automatisches Einrücken nach Absatz verhindern
+
+\begin{document}
+\setchemfig{angle increment=30, atom style={scale=0.5},  fixed length=true, arrow coeff=0.8, bond join=true}
+\renewcommand*\printatom[1]{\rotatebox{-0}{\ensuremath{\mathrm{#1}}}}
+
+%%%% Start Makros %%%%
+
+
+%% Prototyp CMA
+% 1?[a](-[2,1.5]6(-[7,0.75]!\OH)-[-0.6,1.75]5?[close]-[4,0.75]!\OR)-[1]2(-[-2,0.75]-[-3,0.75]!\OR)-[-0.6,1.75]3-[2,1.5]4?[close] %% Version mit Hook 
+% 1(-[1.6,1.5]6(-[7,0.75]!\OH)-[-0.8,1.75]5(-[4,0.75]!\OR)-[1,0.8])-[1]2(-[-2,0.75]-[-3,0.75]!\OR)-[-0.8,1.75]3-[1.6,1.5]4 %% Version ohne Hook 
+% 1(-[:48,1.5]6(-[:210,0.75]!\OH)-[:-24,1.75]5(-[:120,0.75]!\OR)-[:30,0.8])-[:30]2(-[:-60,0.75]-[:-120,0.75]!\OR)-[:-24,1.75]3-[:48,1.5]4 %% Version mit absoluten Winkeln
+% 1(-[::70,1.5]6(-[::140,0.75]!\OH)-[::-80,1.75]5(-[::130,0.75]!\OR)-[::40,0.9])-[::30]2(-[::-90,0.75]-[::-30,0.75]!\OH)-[::-40,1.75]3-[::80,1.5]4 %% Version mit relativen Winkeln
+% 1-[::30,0.75]-[::30,0.75](-[::150]-[::-140,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::-70,1.75]O-[::80,1.5] %% Die #1 ist an einem Ast mit Rest; damit kann die Kopplung von Allylamin zu CMA dargestellt werden
+
+%% Prototyp CMAr (rotated)
+% 1?[a](-[-1]2(-[2,0.75]-[3,0.75]!\OR)-[0.8,1.75]3?[close])-[-1.6,1.5]6(-[5,0.75]!\OH)-[0.8,1.75]5(-[8,0.75]!\OR)-[-1]4?[close] %% Version mit Hook 
+% 1(-[-1]2(-[2,0.75]-[3,0.75]!\OR)-[0.8,1.75]3-[-1.6,1.4])-[-1.6,1.5]6(-[5,0.75]!\OH)-[0.8,1.75]5(-[8,0.75]!\OR)-[-1]4 %% Version ohne Hook 
+% 1(-[:-30]2(-[:60,0.75]-[:90,0.75]!\OR)-[:24,1.75]3-[:-48,1.4])-[:-48,1.5]6(-[:150,0.75]!\OH)-[:24,1.75]5(-[:240,0.75]!\OR)-[:-30]4 %% Version mit absoluten Winkeln
+% (-[::-30](-[::90,0.75]-[::30,0.75]!\OR)-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-120,0.75]!\OR)-[::-40,1.2] %% Version mit relativen Winkeln
+
+%% Makros für Polymerklammern (für Details siehe Dokumentation des Chemfig Paketes)
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+	\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+	\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+	\chemmove{%
+		\node[at=(#4),yshift=(\delimvshift)]{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim width0pt\right.$};
+		\node[at=(#5),yshift=(\delimvshift)]{$\left.\vrule height\delimhalfdim depth\delimhalfdim width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};
+	} % \chemmove
+} % \def\delimleft\makebraces
+
+% Beispiel: Polyethylen
+%
+% \setpolymerdelim[]
+% \chemfig{\vphantom{CH_2}-[@{op,.75}]CH_2-CH_2-[@{cl,0.25}]} 
+% \makebraces[5pt,5pt]{\!n}{op}{cl}
+
+%% Diese Befehle sorgen dafür dass funktionelle Gruppen immer am O bzw. C angesetzt werden
+\definesubmol\OH[HO]{OH}
+\definesubmol\OR[RO]{OR}
+
+%% CMA moleküle (\CMA - normales CMA und \CMAr - rotieretes CMA)
+\definesubmol\CMA{
+	(-[::70,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::30](-[::-90,0.75]-[::-30,0.75]!\OR)-[::-40,1.75]O-[::80,1.5]
+}
+
+
+\definesubmol\CMAVerbindung{
+	O-[::60]-[::30,0.75](-[::150](-[::-60]...)-[::-140,1.5](-[::140,0.75]!\OH)-[::-80,1.75](-[::130,0.75]!\OR)-[::40,1.2])-[::-70,1.75]O-[::80,1.5]
+}
+
+\definesubmol\CMAr{
+	(-[::-30](-[::90,0.75]-[::30,0.75]!\OR-[@{left,0.25}::-30,,,,draw=none])-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-120,0.75]!\OR-[@{right,0.25}::10,,,,draw=none])-[::-40,1.2]
+}
+
+\definesubmol\CMArVerbindung{
+	(-[::-30](-[::90,0.75]!\OR)-[::40,1.75]O-[::-80,1.5])-[::-70,1.5](-[::240,0.75]!\OH)-[::80,1.75](-[::-40,1.2]-[::60]...)-[::-70,0.75]-[::30]O
+}
+
+%% Allylamin Reste
+%DLC-Substrat zu Allylamin
+\definesubmol\AllylaminOF{
+	C(-[::90,,,,thick]C-[::0,,,,thick]C)(-[::-90,,,,thick]C-[::0,,,,thick]C)-[::-30]-[::60]-[::-60]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60,,,,,red,thick](=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})
+}
+
+% Allylamin zu AFM-Spitze
+\definesubmol\AllylaminSP{
+	(=[::60,0.75,,,red]\textcolor{red}{{\textbf O}})-[::-60,,,,red,thick]\textcolor{red}{{\textbf N}}(-[::-60,0.75,,,red,thick]\textcolor{red}{{\textbf H}})-[::60]-[::-60]-[::60]C(-[::60,,,,thick]C-[::0,,,,thick]C)(-[::-120,,,,thick]C-[::0,,,,thick]C)
+}
+
+%%%% Ende Makros %%%%
+
+%\scalebox{1}{\begin{minipage}{\textwidth}%Empfohlene Umbegung, für gute Skalierbarkeit
+%		\setpolymerdelim[]
+%		\setchemfig{atom style={rotate=0,scale=0.5}}
+%		\chemfig{[:0]!\AllylaminOF-[::-60]-[::30,0.001,,,,draw=none]!\CMA-[@{leftOut,0.5}::-100]O-[::60]-[::-30,0.001,,,,draw=none]!\CMAr-[::60]O-[::-60]-[::30,0.001,,,,draw=none]!\CMA-[@{rightOut,0.5}::-100]O-[::60]-[::-30,0.001,,,draw=none]!\CMAr-[::60]!\AllylaminSP}
+%		%\makebraces[45pt,30pt]{\!n}{left}{right}
+%		\makebraces[30pt,50pt]{\!n}{leftOut}{rightOut}
+%	\end{minipage}
+%}
+
+\scalebox{1}{\begin{minipage}{\textwidth}%Empfohlene Umbegung, für gute Skalierbarkeit
+		\setpolymerdelim[]
+		\setchemfig{atom style={rotate=0,scale=0.5}}
+		\chemfig{[:0]!\AllylaminOF-[::-60]!\CMAVerbindung-[@{leftOut,0.5}::-100]O-[::60]-[::-30,0.001,,,,draw=none]!\CMAr-[::60]O-[::-60]-[::30,0.001,,,,draw=none]!\CMA-[@{rightOut,0.5}::-100]O-[::60]-[::-30,0.001,,,draw=none]!\CMArVerbindung-[::60]!\AllylaminSP}
+		%\makebraces[45pt,30pt]{\!n}{left}{right}
+		\makebraces[30pt,50pt]{\!n}{leftOut}{rightOut}
+	\end{minipage}
+}
+
+
+\end{document}
